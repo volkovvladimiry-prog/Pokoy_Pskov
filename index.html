@@ -105,6 +105,14 @@
   .step h3{font-size:17px;margin-bottom:8px;font-family:'Inter',sans-serif;font-weight:600;color:var(--moss-900);}
   .step p{font-size:14px;color:var(--ink-soft);}
 
+  /* REVIEWS */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .review-card{background:var(--bg-card);border:1px solid var(--line);border-radius:4px;padding:24px;display:flex;flex-direction:column;}
+  .review-stars{color:var(--bronze-600);font-size:14px;letter-spacing:2px;margin-bottom:12px;}
+  .review-text{font-size:14.5px;color:var(--ink-soft);flex:1;margin-bottom:16px;}
+  .review-author{font-size:14px;font-weight:600;color:var(--moss-900);}
+  .review-meta{font-size:12.5px;color:var(--ink-soft);}
+
   /* ORDER FORM */
   .order-section{background:var(--moss-900);color:var(--bg-card);}
   .order-section .eyebrow{color:var(--bronze-300);}
@@ -148,6 +156,7 @@
     .hero-grid{grid-template-columns:1fr;}
     .hero-art{max-width:280px;margin:0 auto;}
     .cards{grid-template-columns:1fr;}
+    .reviews{grid-template-columns:1fr;}
     .steps{grid-template-columns:1fr;gap:20px;}
     .step{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:18px;}
     .step:first-child{border-top:none;padding-top:0;}
@@ -237,7 +246,7 @@
       <div class="card">
         <p class="card-tag">Разово</p>
         <h3>Базовая уборка</h3>
-        <p class="price">2 100 ₽ <span>/ визит</span></p>
+        <p class="price">3 200 ₽ <span>/ визит</span></p>
         <ul>
           <li>Уборка листвы и мусора</li>
           <li>Прополка сорняков на участке</li>
@@ -249,7 +258,7 @@
       <div class="card featured">
         <p class="card-tag">Популярно</p>
         <h3>Комплексный уход</h3>
-        <p class="price">3 900 ₽ <span>/ визит</span></p>
+        <p class="price">4 900 ₽ <span>/ визит</span></p>
         <ul>
           <li>Всё из базовой уборки</li>
           <li>Покраска оградки и лавочки</li>
@@ -261,7 +270,7 @@
       <div class="card">
         <p class="card-tag">Абонемент</p>
         <h3>Сезонный уход</h3>
-        <p class="price">от 6 500 ₽ <span>/ сезон, 3 визита</span></p>
+        <p class="price">8 850 ₽ <span>/ сезон, 3 визита</span></p>
         <ul>
           <li>Визиты весной, летом, осенью</li>
           <li>Полив и уход за посадками</li>
@@ -300,6 +309,53 @@
         <p class="step-num">04</p>
         <h3>Присылаем отчёт</h3>
         <p>Фото до и после в мессенджер по завершении работ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Отзывы</p>
+      <h2>Что говорят те, кто уже обращался</h2>
+    </div>
+    <div class="reviews">
+      <div class="review-card">
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">Живу в Москве, а мама похоронена в Пскове — раньше ездила два раза в год и переживала между визитами. Теперь спокойна, каждый месяц приходит фотоотчёт.</p>
+        <p class="review-author">Ирина С.</p>
+        <p class="review-meta">Комплексный уход, 4 месяца</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">Заказывал разовую уборку перед родительским днём — приехать сам не успевал. Сделали быстро, прислали фото до и после, всё по-честному.</p>
+        <p class="review-author">Дмитрий К.</p>
+        <p class="review-meta">Базовая уборка</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">Оградку покрасили аккуратно, цветы посадили красиво — даже лучше, чем я сама бы сделала. Спасибо за бережное отношение.</p>
+        <p class="review-author">Наталья В.</p>
+        <p class="review-meta">Комплексный уход</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">Взяла сезонный абонемент на весь год — не пожалела. Не нужно каждый раз договариваться заново, всё уже спланировано.</p>
+        <p class="review-author">Елена П.</p>
+        <p class="review-meta">Сезонный уход</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">Долго не решался доверить это незнакомым людям, но после первого фотоотчёта все сомнения ушли — видно, что работают аккуратно и с уважением.</p>
+        <p class="review-author">Сергей М.</p>
+        <p class="review-meta">Базовая уборка</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">Ответили в тот же день, приехали быстро, по цене договорились сразу, без сюрпризов. Буду обращаться и дальше.</p>
+        <p class="review-author">Ольга Т.</p>
+        <p class="review-meta">Комплексный уход</p>
       </div>
     </div>
   </div>
